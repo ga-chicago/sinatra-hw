@@ -4,8 +4,39 @@ Bundler.require
 get '/radiohead/json' do
 	response['Access-Control-Allow-Origin'] = '*'
 	content_type :json
-	{name: "Radiohead", albums: ["Pablo Honey", "The Bends", "OK Computer", "Kid A", "Amnesiac", "Hail To The Thief", "In Rainbows", "King of Limbs", "A Moon Shaped Pool"]}
+	{name: "Radiohead", albums: ["Pablo Honey", "The Bends", "OK Computer", "Kid A", "Amnesiac", "Hail To The Thief", "In Rainbows", "King of Limbs", "A Moon Shaped Pool"]}.to_json
+end
 
+get '/arcadefire/json' do
+
+	response['Access-Control-Allow-Origin'] = '*'
+	content_type :json
+	{name: "Arcade Fire", albums: ["Funeral", "Neon Bible", "The Suburbs", "Reflektor"]}.to_json
+	
+end
+
+get '/angelolsen/json' do
+
+	response['Access-Control-Allow-Origin'] = '*'
+	content_type :json
+	{name: "Angel Olsen", albums: ["Strange Cacti", "Half Way Home", "Burn Your Fire", "My Woman"]}.to_json
+	
+end
+
+get '/bss/json' do
+
+	response['Access-Control-Allow-Origin'] = '*'
+	content_type :json
+	{name: "Broken Social Scene", albums: ["Feel Good Lost", "You Forgot It In People", "Bee Hives", "Broken Social Scene", "Forgiveness Rock Record", "Hug of Thunder"]}.to_json
+	
+end
+
+get '/tameimpala/json' do
+
+	response['Access-Control-Allow-Origin'] = '*'
+	content_type :json
+	{name: "Tame Impala", albums: ["Inner Speaker", "Lonerism", "Currents"]}.to_json
+end
 
 get '/radiohead/view' do 
 
