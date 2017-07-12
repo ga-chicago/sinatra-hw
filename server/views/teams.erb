@@ -1,0 +1,15 @@
+<div>
+	<a href="/lakers/view">Lakers</a>
+	<a href="/suns/view">Suns</a>
+	<a href="/warriors/view">Warriors</a>
+	<a href="/clippers/view">Clippers</a>
+
+	<h1><%=@team[:name]%></h1>
+
+	<h2>Players</h2>
+	<ol>
+		<% @team[:players].each do |player| %>
+			<li><%=player%></li>
+		<%end%>
+	<ol>
+</div>
