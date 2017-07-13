@@ -1,0 +1,16 @@
+<div>
+	<h1>Full Stacks</h1>
+	<h2><%= @name %></h2>
+	<h3>Requirements</h3>
+	<ul>
+	<% @requirements.each do |req| %>
+		<li><%= req %></li>
+	<% end %>
+	</ul>
+	<h3>Companies using <%= @name %></h3>
+	<ul>
+	<% @companies_using.each do |company| %>
+		<li><%= company %></li>
+	<% end %>
+	</ul>
+</div>
