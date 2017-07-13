@@ -1,0 +1,8 @@
+	<h1><%= @name %></h1>
+	<h2><%= @publisher %></h2>
+	<%= @alignment %>
+	<ul>
+	<% @powers.each do |power| %>
+		<li> <%= power %> </li>
+	<% end %>
+	</ul>
