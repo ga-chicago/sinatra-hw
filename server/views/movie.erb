@@ -1,0 +1,11 @@
+
+<a href="/lion/view">Lion</a>
+<a href="/hitch/view">Hitch</a>
+<a href="/aladdin/view">Aladdin</a>
+<h1><%= @movie[:name] %></h1>
+<h2>Favorite Movies</h2>
+<ul>
+  <% @movie[:favorite_movies].each do |movie| %>
+    <li><%= movie %></li>
+  <% end %>
+</ul>

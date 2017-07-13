@@ -33,4 +33,3 @@ get '/aladdin/view' do
 	@movie = {name: "Aladdin", actors:["Robin Williams", "Jonathan Freeman", "Scott Weinger"]}
 	erb: movie
 end
-
